@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+int i2,i,l,k,c,a[3][3],b[3][3];
+printf("Digite os valores desejados\n");
+for(i=0;i<3;i++)
+{
+	for (i2=0;i2<3;i2++)
+	{
+	printf("Digite o valor da matriz A[%d][%d]:",i,i2);
+	scanf("%d",&a[i][i2]);
+}
+}
+printf("\n A matriz digitada foi\n");
+for(i=0;i<3;i++)
+{
+	for (i2;i2<3;i2++)
+	{
+	printf("%d\t",a[i][i2]);
+}
+printf("\n");
+}
+return 0;
+}

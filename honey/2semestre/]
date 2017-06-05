@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int*qual(int a,int b,int c)
+{
+if(a>b>c)
+	{
+return ("O maior %d e o menor %d",a+c);
+	}
+if(b>a>c)
+	{
+return (b,c);
+	}
+if(b>c>a)
+	{
+return (b,a);
+	}
+if(c>b>a)
+	{
+return (c,a);
+	}
+if(a>c>b)
+	{
+return(a,b);
+	}
+if(c>a>b)
+	{
+return(c,b);
+	}
+}
+
+int main(int a,int b,int c)
+{
+printf("\nDigite os valores de a,b e c: ");
+scanf("%d",&a);
+scanf("%d",&b);
+scanf("%d",&c);
+printf("%s",qual(a,b,c));
+}
